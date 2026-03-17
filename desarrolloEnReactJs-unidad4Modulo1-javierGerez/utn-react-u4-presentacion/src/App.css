@@ -1,0 +1,18 @@
+.titulo-principal {
+    text-align: center;
+}
+
+
+.lista-tarjetas {
+  display: flex;
+  flex-wrap: wrap;       /* Permite que bajen si no caben */
+  justify-content: center; /* Centra las tarjetas */
+  gap: 20px;            /* Espacio entre tarjetas */
+}
+
+@media (max-width: 768px) {
+  .lista-tarjetas {
+    flex-direction: column; /*  Se apilan en vertical en móviles */
+    align-items: center;
+  }
+}
