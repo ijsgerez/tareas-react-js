@@ -1,0 +1,89 @@
+/* Estructura General */
+form, .box-validacion-visual {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+form {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Inputs y Contenedores */
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px 15px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2f3640;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* Botón */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Caja de Validación Visual */
+.box-validacion-visual {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.box-validacion-visual h2 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+/* Mensajes y Párrafos */
+.mensaje-input, .mensaje-ayuda, .box-validacion-visual p {
+  font-size: 0.9rem;
+  margin: 8px 0;
+  word-break: break-all;
+}
+
+.mensaje-input {
+  color: #57606f;
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.mensaje-ayuda {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+/* Estilo específico para el último mensaje (Enter) */
+.box-validacion-visual p:last-child {
+  color: #e67e22;
+  font-weight: bold;
+}
